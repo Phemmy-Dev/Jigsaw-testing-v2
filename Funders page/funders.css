@@ -1,0 +1,21 @@
+.funders-cont {
+    margin: 70px 100px;
+}
+
+.funders-cont h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.funders-cont p {
+    font-size: 1.2rem;
+}
+
+.partners {
+    margin-top: 3rem;
+}
+
+.partners h3 {
+    font-size: 1.7rem;
+}
