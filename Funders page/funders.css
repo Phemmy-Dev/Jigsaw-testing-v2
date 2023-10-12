@@ -1,5 +1,7 @@
 .funders-cont {
-    margin: 70px 100px;
+    /* margin: 70px 100px; */
+    padding: 10px 30px;
+    height: 200px;
 }
 
 .funders-cont h2 {
@@ -12,10 +14,26 @@
     font-size: 1.2rem;
 }
 
+.partnership {
+    padding: 10px 30px;
+    height:200px;
+    /* border: 1px solid red; */
+}
+
 .partners {
     margin-top: 3rem;
 }
 
 .partners h3 {
     font-size: 1.7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .funders-cont {
+        margin: 50px 20px;
+    }
+
+    .sponsors img {
+        width: 100px;
+    }
 }

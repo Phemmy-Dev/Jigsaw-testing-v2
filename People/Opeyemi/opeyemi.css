@@ -8,7 +8,7 @@
 }
 
 .profile .profile-img img {
-    width: 500px;
+    width: 300px;
 }
 .profile-content {
     /* border: 2px solid red; */
@@ -23,12 +23,49 @@
 .profile-content .job-title  {
     font-size: 25px;
     font-weight: 600;
+    font-style: italic;
     margin-bottom: 10px;
 }
 
 .profile-content .profile-bio {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-right: 30px;
     text-align: justify;
     margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        margin: 70px 20px;
+    }
+
+    .profile .profile-img img {
+        width: 300px;
+    }
+
+    .profile-content h3 {
+        font-size: 30px;
+    }
+
+    .profile-content .job-title {
+        font-style: italic;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .profile-content .profile-bio {
+        font-size: 0.8rem;
+    }
+}
+
+img { 
+    float: left; 
+    margin: 15px; 
+} 
+
+p { 
+    text-align: justify; 
+    font-size: 25px;
 }

@@ -1,0 +1,30 @@
+section {
+    padding: 10px 30px;
+    /* height: 400px; */
+}
+
+section h2 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.contact-cont {
+    /* border: 1px solid red; */
+}
+
+.contact-inner {
+    /* border: 2px solid green; */
+    padding: 20px 0;
+}
+.contact-inner h4 {
+    font-size: 1.3rem;
+}
+
+.contact-inner h5 {
+    padding-top: 15px; 
+    font-size: 1rem;
+}
+.contact-inner a {
+    text-decoration: none;
+    color: red;
+}

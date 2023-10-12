@@ -1,0 +1,13 @@
+section{
+    padding: 10px 30px;
+    /* height: 400px; */
+}
+
+section h3 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+}

@@ -36,7 +36,7 @@
                         <li><a href="./About page/about.html">About</a></li>
                         <li><a href="./Aims page/aims.html">Aims</a></li>
                         <li><a href="./Funders page/funders.html">Funders</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="./contact/contact.html">Contacts</a></li>
                     </ul>
                 </li>  <!--JIGSAW-A-->
 
@@ -99,12 +99,102 @@
 
                 <li><a href="#">Research <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="sub-links">
-                        <li><a href="#">Osteoarthritis</a></li>
+                        <li><a href="./Research/Osteoarthritis/osteoarthritis.html">Osteoarthritis</a></li>
                     </ul>
                 </li>
 
                     
             </ul>
+        </nav>
+
+        <!-- Mobile nav -->
+        <nav class="mobile-nav">
+            <div class="mobile-nav-container">
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/logo.jpg" alt="Logo"></a>
+                </div>
+
+                <div class="menu-toggle" onclick="openNav()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <button class="dropdown-btn">JIGSAW-A 
+                    <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="./About page/about.html">About</a>
+                <a href="./Aims page/aims.html">Aims</a>
+                <a href="./Funders page/funders.html">Funders</a>
+                <a href="./contact/contact.html">Contact</a>
+            </div>
+
+            <button class="dropdown-btn">People <!--People menu-->
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn">Co-principal Researchers 
+                    <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="./People/Opeyemi/opeyemi.html">Dr Opeyemi Babatunde</a>
+            </div>
+
+        <button class="dropdown-btn">Country Leads 
+                <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="./People/Dr Adetunji/adetunji.html">Dr Adetunji</a>
+            <a href="./People/Dr Alonge/alonge.html">Dr Alonge</a>
+        </div>
+
+    <button class="dropdown-btn">Researchers 
+            <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <button class="dropdown-btn">United Kingdom 
+            <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="./People/Opeyemi/opeyemi.html">Dr Opeyemi Babatunde</a>
+    </div>
+    <button class="dropdown-btn">Nigeria 
+        <i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-container">
+    <a href="./People/Dr Adetunji/adetunji.html">Dr Adetunji</a>
+    <a href="./People/Dr Alonge/alonge.html">Dr Alonge</a>
+    <a href="./People/Pharm Ogunbanjo/ogunbanjo.html">Pharm Ogunbanjo</a>
+</div>
+    </div>
+
+    <button class="dropdown-btn">Research <br> Assistants 
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="./People/Tolulope/tolulope.html">Tolulope</a>
+        <a href="./People/Praise Taiwo/praise.html">Praise Taiwo</a>
+    </div>
+
+
+
+
+
+            </div>
+
+            <button class="dropdown-btn">Research 
+                    <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                    <a href="./Research/Osteoarthritis/osteoarthritis.html">Osteoarthritis</a>
+            </div>
+            
+                <!-- <a href="#">Contact</a> -->
+            </div>
         </nav>
     </header>
 
@@ -127,52 +217,27 @@
         <div class="swiper-pagination"></div>
     </section>
 
-    <section class="section partnership mt-10 text-4xl font-bold">
+    <section class="section partnership">
         <h3>A partnership between </h3>
 
         <div class="sponsors">
-            <img src="./img/kelle.png" alt="Keele Uni" width="200px">
+            <img src="./img/kelle.png" alt="Keele Uni" width="150px">
+            <img src="./img/unibadan.png" alt="University of Ibadan" width="250px">
+            <img src="./img/wafers logo.png" alt="WAFERs Research Institute">
         </div>
     </section>
 
-    <footer class="site-footer">
-        <div class="footer-logo">
-            <img src="../img/logo.jpg" alt="footer-logo">
-        </div> <!-- footer-logo -->
+    
 
-        <div class="footer-links">
-            <div class="footer-link-1">
-                <h4>JIGSAW-A</h4>
-                <a href=""><p>About</p></a>
-                <a href=""><p>Aims</p></a>
-                <a href=""><p>Funders</p></a>
-                <a href=""><p>Contact</p></a>
-            </div>
-
-            <div class="footer-link-2">
-                <h4>People</h4>
-                <a href=""><p>Co-principal Researchers</p></a>
-                <a href=""><p>Country Leads</p></a>
-                <a href=""><p>Researchers</p></a>
-                <a href=""><p>Research Assitants</p></a>
-            </div>
-
-            <div class="footer-link-2">
-                <h4>Research </h4>
-                <a href=""><p>Osteoarthritis</p></a>
-            </div>
-        </div>
-    </footer>
-
-    <div class="footer-bottom">
+    <footer class="footer-bottom">
         <p>&copy;  2023 Jigsaw</p>
 
         <div class="social-links">
             <a href="http://www.facebook.com/profile.php?id=100094755996364&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://x.com/JIGSAWAfrica?s=20" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i></a>
+            <a href="mailto:jigsawafrica@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </div>
-    </div>
+    </footer>
     
 
 

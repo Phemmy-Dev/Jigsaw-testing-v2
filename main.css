@@ -21,7 +21,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 32px;
+    padding: 10px 32px;
 }
 
 .logo {
@@ -30,7 +30,8 @@ nav {
 
 }
 .logo img {
-    height: 80px; /* Adjust the height as needed */
+    /* display: none; */
+    height: 60px; /* Adjust the height as needed */
     /* background-color: red; */
 }
 
@@ -47,13 +48,14 @@ nav {
 .nav-links li {
     /* margin-right: 20px; */
     position: relative;
+    /* border: 2px solid red; */
 }
 
 .nav-links a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     /* margin-right: 100px; */
 }
 
@@ -78,7 +80,7 @@ nav {
 
 .sub-links li {
     width: 200px; /* Adjust the width as needed */
-    padding: 20px;
+    padding: 10px;
     text-align: left;
     /* transition: background-color 0.3s ease-in-out; */
 }
@@ -146,8 +148,115 @@ nav {
     visibility: visible;
 }
 
+.mobile-nav {
+    display: none;
+}
+
+/* Media Queries for mobile nav bar */
+
+@media screen and (max-width: 768px) {
+
+    .mobile-nav {
+        display: block;
+        padding: 0;
+    }
+    .desk-nav{
+        display: none;
+    }
+
+    .mobile-nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 22px;
+    }
+    .menu-toggle {
+        cursor: pointer;
+        display: block;
+    }
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
 
 
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: whitesmoke;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+}
+
+.sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #444444;
+        display: block;
+        transition: 0.3s;
+    }
+
+.sidenav a:hover {
+        color: black;
+}
+
+.sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+}
+
+
+
+.dropdown-btn {
+    /* border: 2px solid red; */
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    /* border: none; */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid gray;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.active {
+    background-color: whitesmoke;
+    color: black;
+}
+
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: rgb(227, 225, 225);
+    padding-left: 8px;
+}
+
+  /* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+}
 
 /* Hero Section */
 
@@ -172,7 +281,7 @@ nav {
 .slide-text {
     /* background: rgb(176, 173, 173); */
     position: absolute;
-    bottom: 200px; /* Vertically center the text */
+    bottom: 150px; /* Vertically center the text */
     left: 20px; /* Horizontally center the text */
     padding: 10px;
     font-size: 4rem; /* Adjust the font size as needed */
@@ -241,26 +350,31 @@ nav {
 }
 
 .partnership {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-top: 3rem;
 }
 
+.sponsors {
+    display: flex;
+    align-items: center;
+}
 
 
 /* Footer Styling */
 .site-footer {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     background: whitesmoke;
     align-items: center;
     /* border: 3px solid green; */
-    padding: 20px 50px;
+    padding: 10px 50px;
 }
 
 .site-footer .footer-logo {
     /* border: 2px solid red; */
     width: 20%;
-    padding: 10px 30px;
+    padding: 0px 30px;
 }
 
 .site-footer .footer-logo img {
@@ -272,7 +386,7 @@ nav {
     justify-content: space-between;
     padding: 10px 30px;
     /* border: 2px solid red; */
-    width: 70%;
+    /* width: 40%; */
 }
 
 .site-footer .footer-links h4 {
@@ -302,16 +416,17 @@ nav {
 .site-footer {
     border-bottom: 1px solid rgb(93, 91, 91);
     border-bottom-width: 30%;
+    /* border: 1px solid red; */
 }
 
 
 .footer-bottom{
     background: whitesmoke;
-    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom-left-radius: 15px;
-    padding: 10px 40px;
+    padding: 0px 30px;
     border-bottom-right-radius: 15px;
 }
 
@@ -319,20 +434,59 @@ nav {
     font-size: 20px;
     font-weight:600 ;
 }
-
+.social-links a {
+    display: block;
+}
 .social-links {
     display: flex;
     justify-content: space-between;
-    /* border: 2px solid red; */
-    width: 150px;
+    width: 190px;
     font-size: 25px;
+    /* border: 1px solid red; */
+    padding: 10px 30px;
 }
 
+.social-links-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.social-links-inner i {
+    color: black;
+    display: block;
+}
 .footer-bottom i {
     transition: all 0.3s ease-in;
+    color: black;
 }
-
 .social-links i:hover {
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 768px) { 
+    .site-footer {
+    padding: 0px 0px;
+    flex-direction: column;
+    align-items: start;
+    }
+    .site-footer .footer-logo img{
+        width: 10px;
+        display: none;
+    }
+    .site-footer .footer-links {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 70%;
+        gap: 20px;
+    }
+    .footer-bottom {
+        padding: 10px 20px;
+    }
+    .footer-bottom p {
+        font-size: 14px;
+    }
+
+    .footer-bottom i {
+        font-size: 25px;
+    }
+
+}
