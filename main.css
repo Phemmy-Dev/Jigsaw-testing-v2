@@ -386,6 +386,8 @@ nav {
     margin-top: 40px;
     background: whitesmoke;
     display: flex;
+    position: relative;
+    bottom: 0px;
     justify-content: space-between;
     align-items: center;
     border-bottom-left-radius: 15px;
