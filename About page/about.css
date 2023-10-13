@@ -10,7 +10,7 @@
     margin-bottom: 10px;
 }
 .about-section p {
-    font-size: 1.2rem;
+    font-size: 16px;
 }
 
 .about-grid {
@@ -71,6 +71,9 @@
     }
     .about-1 h2 {
         font-size: 3rem;
+    }
+    .about-section p {
+        font-size: 13px;
     }
     .about-grid-1 > img {
         width: 220px;
