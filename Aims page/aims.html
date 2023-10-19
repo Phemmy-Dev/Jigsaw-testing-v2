@@ -25,7 +25,7 @@
     <header>
         <nav class="desk-nav">
             <div class="logo">
-                <a href="../index.html"><img src="../img/logo.jpg" alt="Logo"></a>
+                <a href="../index.html"><img src="../img/logo.jpg" alt="Logo" class="image-with-shadow"></a>
             </div>
             <!-- Logo -->
 
@@ -35,8 +35,7 @@
                     <ul class="sub-links">
                         <li><a href="../About page/about.html">About</a></li>
                         <li><a href="#">Aims</a></li>
-                        <li><a href="../Funders page/funders.html">Funders</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="../contact/contact.html">Contacts</a></li>
                     </ul>
                 </li>  <!--JIGSAW-A-->
 
@@ -44,17 +43,18 @@
                     <a href="#">People <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="sub-links px-5">
                         <li>
-                            <div class=" flex row justify-between items-center">
-                                <a href="#">Co-principal Researchers</a>
+                            <div class="">
+                                <a href="#">Principal Investigator</a>
                                 <i class="fa-solid fa-angle-right text-black"></i>
                             </div>
                             <ul class="sub-sub-links">
                                 <li><a href="../People/Opeyemi/opeyemi.html">Dr Opeyemi Babatunde</a></li>
                             </ul>
                         </li>
+                        <!-- Co-Investigators -->
                         <li>
-                            <div class=" flex row justify-between items-cente">
-                                <a href="#" class="inline">Country Leads</a>
+                            <div>
+                                <a href="#">Co-Investigators</a>
                                 <i class="fa-solid fa-angle-right text-black"></i>
                             </div>
                             </div>
@@ -63,36 +63,13 @@
                                 <li><a href="../People/Dr Alonge/alonge.html">Dr Alonge</a></li>
                             </ul>
                         </li>
+                        <!-- Researchers -->
                         <li>
-                            <div class=" flex row justify-between items-center">
-                                <a href="#">Researchers</a>
-                                <i class="fa-solid fa-angle-right text-black"></i>
+                            <div>
+                                <a href="../Researchers/Researchers.html">Our Team</a>
+                                <!-- <i class="fa-solid fa-angle-right text-black"></i> -->
                             </div>
-                            <ul class="sub-sub-links">
-                                <li><a href="#">United Kingdom</a>
-                                    <ul class="sub-sub-sub-links">
-                                        <li><a href="../People/Opeyemi/opeyemi.html">Dr Opeyemi Babatunde</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Nigeria</a>
-                                    <ul class="sub-sub-sub-links">
-                                        <li><a href="../People/Dr Adetunji/adetunji.html">Dr Adetunji</a></li>
-                                        <li><a href="../People/Dr Alonge/alonge.html">Dr Alonge</a></li>
-                                        <li><a href="../People/Pharm Ogunbanjo/ogunbanjo.html">Pharm Ogunbanjo</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class=" flex row justify-between items-center">
-                                <a href="#">Researchers Assistants</a>
-                                <i class="fa-solid fa-angle-right text-black"></i>
-                            </div>
-                            <ul class="sub-sub-links">
-                                <li><a href="../People/Tolulope/tolulope.html">Tolulope Owoyemi</a></li>
-                                <li><a href="../People/Praise Taiwo/praise.html">Praise Taiwo</a></li>
-                            </ul>
+                            
                         </li>
                     </ul>
                 </li>
@@ -100,6 +77,7 @@
                 <li><a href="#">Research <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="sub-links">
                         <li><a href="../Research/Osteoarthritis/osteoarthritis.html">Osteoarthritis</a></li>
+                        <li><a href="../Research/Resources Page/resources.html">Resources</a></li>
                     </ul>
                 </li>
 
@@ -111,7 +89,7 @@
         <nav class="mobile-nav">
             <div class="mobile-nav-container">
                 <div class="logo">
-                    <a href="../index.html"><img src="../img/logo.jpg" alt="Logo"></a>
+                    <a href="../index.html"><img src="../img/logo.jpg" alt="Logo" class="image-with-shadow"></a>
                 </div>
 
                 <div class="menu-toggle" onclick="openNav()">
@@ -129,7 +107,6 @@
             <div class="dropdown-container">
                 <a href="../About page/about.html">About</a>
                 <a href="#">Aims</a>
-                <a href="../Funders page/funders.html">Funders</a>
                 <a href="../contact/contact.html">Contact</a>
             </div>
 
@@ -137,14 +114,14 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-container">
-                <button class="dropdown-btn">Co-principal Researchers 
+                <button class="dropdown-btn">Principal Investigator 
                     <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-container">
                 <a href="./People/Opeyemi/opeyemi.html">Dr Opeyemi Babatunde</a>
             </div>
 
-        <button class="dropdown-btn">Country Leads 
+        <button class="dropdown-btn">Co-Investigators 
                 <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
@@ -152,33 +129,10 @@
             <a href="./People/Dr Alonge/alonge.html">Dr Alonge</a>
         </div>
 
-    <button class="dropdown-btn">Researchers 
-            <i class="fa fa-caret-down"></i>
+    <button class="dropdown-btn"> 
+            <a href="./Researchers/Researchers.html" class="dropdown-btn">Our Team</a>
     </button>
-    <div class="dropdown-container">
-        <button class="dropdown-btn">United Kingdom 
-            <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-        <a href="./People/Opeyemi/opeyemi.html">Dr Opeyemi Babatunde</a>
-    </div>
-    <button class="dropdown-btn">Nigeria 
-        <i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-container">
-    <a href="./People/Dr Adetunji/adetunji.html">Dr Adetunji</a>
-    <a href="./People/Dr Alonge/alonge.html">Dr Alonge</a>
-    <a href="./People/Pharm Ogunbanjo/ogunbanjo.html">Pharm Ogunbanjo</a>
-</div>
-    </div>
 
-    <button class="dropdown-btn">Research <br> Assistants 
-        <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-        <a href="./People/Tolulope/tolulope.html">Tolulope</a>
-        <a href="./People/Praise Taiwo/praise.html">Praise Taiwo</a>
-    </div>
 
             </div>
 
@@ -187,6 +141,7 @@
             </button>
             <div class="dropdown-container">
                     <a href="./Research/Osteoarthritis/osteoarthritis.html">Osteoarthritis</a>
+                    <a href="./Research/Resources Page/resources.html">Resources</a>
             </div>
             
                 <!-- <a href="#">Contact</a> -->

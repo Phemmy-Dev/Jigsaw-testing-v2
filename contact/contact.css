@@ -28,3 +28,13 @@ section h2 {
     text-decoration: none;
     color: red;
 }
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    section h2 {
+        font-size: 3rem;
+    }
+}

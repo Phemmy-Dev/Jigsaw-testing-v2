@@ -10,6 +10,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+section {
+    height: 100%;
+}
+
 header {
     background-color: whitesmoke;
     /* padding: 15px 0; */
@@ -34,6 +38,9 @@ nav {
     height: 60px; /* Adjust the height as needed */
     /* background-color: red; */
 }
+.image-with-shadow {
+    box-shadow: 8px 8px 9px #888888;
+  }
 
 .nav-links {
     list-style: none;
@@ -44,6 +51,7 @@ nav {
     transition: all 0.3s ease-in-out;
     text-align: center;
 }
+
 
 .nav-links li {
     /* margin-right: 20px; */
@@ -87,7 +95,7 @@ nav {
 
 .sub-links li a {
     color: black;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .nav-links li:hover .sub-links {
@@ -219,7 +227,7 @@ nav {
 
 
 
-.dropdown-btn {
+.dropdown-btn, .dropdown-btn a {
     /* border: 2px solid red; */
     padding: 30px 20px;
     text-decoration: none;
@@ -342,7 +350,11 @@ nav {
     font-size: 24px;
 }
 
-
+@media screen and (max-width: 768px) {
+    .slide-text {
+        font-size: 2.5rem;
+    }
+}
 
 
 /* Partnership Styling */
@@ -354,6 +366,9 @@ nav {
 .partnership {
     font-size: 1.8rem;
     margin-top: 3rem;
+}
+.partnership h3 {
+    font-size: 30px;
 }
 
 .sponsors {
@@ -371,6 +386,9 @@ nav {
     width: 250px;
 }
 
+.funders {
+    margin-top: 30px;
+}
 @media screen and (max-width: 768px) {
     .sponsors img {
         width: 100px;
@@ -378,6 +396,9 @@ nav {
 
     .sponsors img:nth-child(2) {
         width: 150px;
+    }
+    .partnership h3 {
+        font-size: 25px;
     }
 }
 
