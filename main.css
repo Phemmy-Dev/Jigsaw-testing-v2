@@ -15,9 +15,9 @@ section {
 }
 
 header {
-    background-color: whitesmoke;
+    background-color: #1c5252;
     /* padding: 15px 0; */
-    color: #333;
+    color: #fff;
     height: 1%;
 }
 
@@ -39,14 +39,14 @@ nav {
     /* background-color: red; */
 }
 .image-with-shadow {
-    box-shadow: 8px 8px 9px #888888;
+    box-shadow: 8px 8px 9px #215151;
   }
 
 .nav-links {
     list-style: none;
     display: flex;
     /* background-color: red; */
-    width: 80%;
+    width: 62%;
     justify-content: space-around;
     transition: all 0.3s ease-in-out;
     text-align: center;
@@ -61,7 +61,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 17px;
     /* margin-right: 100px; */
@@ -75,11 +75,12 @@ nav {
     /* margin-top: 10px;  */
     top: 100%;
     left: 0;
-    background-color: whitesmoke;
+    background-color: #1c5252;
     z-index: 5;
     color: black;
     opacity: 0;
     visibility: hidden;
+    border-radius: 5px;
     /* transition: opacity 4s ease-in; */
 }
 
@@ -87,14 +88,18 @@ nav {
 
 
 .sub-links li {
-    width: 200px; /* Adjust the width as needed */
+    width: 160px; /* Adjust the width as needed */
     padding: 10px;
     text-align: left;
     /* transition: background-color 0.3s ease-in-out; */
 }
 
+.sub-links li i {
+    color: white;
+}
+
 .sub-links li a {
-    color: black;
+    color: white;
     font-size: 14px;
 }
 
@@ -108,11 +113,13 @@ nav {
 .sub-sub-links {
     display: none;
     position: absolute;
+    border-radius: 5px;
     top: 0;
     /* background-color: green; */
-    width: 220px;
+    width: 200px;
     left: 100%;
-    background-color: whitesmoke;
+    background-color: #1c5252;
+    color: white;
     z-index: 2;
     opacity: 0;
     visibility: hidden;
@@ -124,6 +131,7 @@ nav {
     /* background: brown; */
     width: 220px;
     padding: 20px ;
+    color: white;
 }
 
 .sub-links li:hover .sub-sub-links {
@@ -185,7 +193,7 @@ nav {
     .bar {
         width: 25px;
         height: 3px;
-        background-color: #000;
+        background-color: #fff;
         margin: 6px 0;
         transition: 0.4s;
     }
@@ -198,7 +206,7 @@ nav {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: whitesmoke;
+        background-color: #1c5252;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -208,13 +216,13 @@ nav {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #444444;
+        color: white;
         display: block;
         transition: 0.3s;
     }
 
 .sidenav a:hover {
-        color: black;
+        color: white;
 }
 
 .sidenav .closebtn {
@@ -232,13 +240,13 @@ nav {
     padding: 30px 20px;
     text-decoration: none;
     font-size: 20px;
-    color: black;
+    color: white;
     display: block;
     /* border: none; */
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid white;
     background: none;
     width: 100%;
     text-align: left;
@@ -247,18 +255,18 @@ nav {
 }
 
 .dropdown-container a {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid white;
 }
 
 .active {
-    background-color: whitesmoke;
-    color: black;
+    background-color: #1c5252;
+    color: white;
 }
 
   /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
     display: none;
-    background-color: rgb(227, 225, 225);
+    background-color: #1c5252;
     padding-left: 8px;
 }
 
@@ -405,20 +413,21 @@ nav {
 /* Footer Styling */
 .footer-bottom{
     margin-top: 40px;
-    background: whitesmoke;
+    background: #1c5252;
     display: flex;
     position: relative;
     bottom: 0px;
     justify-content: space-between;
     align-items: center;
-    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 3px;
     padding: 0px 30px;
-    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 3px;
 }
 
 .footer-bottom p {
     font-size: 20px;
     font-weight:600 ;
+    color: white;
 }
 .social-links a {
     display: block;
@@ -437,12 +446,12 @@ nav {
     justify-content: space-between;
 }
 .social-links-inner i {
-    color: black;
+    color: white;
     display: block;
 }
 .footer-bottom i {
     transition: all 0.3s ease-in;
-    color: black;
+    color: white;
 }
 .social-links i:hover {
     transform: scale(1.2);

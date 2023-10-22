@@ -5,7 +5,7 @@
 }
 
 :root {
-    --secondary-color: #e4d7bf;
+    --secondary-color: #1c5252;
     --primary-color: #fc8402;
 }
 
@@ -42,7 +42,7 @@ body {
     content: "";
     width: 70%;
     height: 4px;
-    background-color: #e4d7bf;
+    background-color: #1c5252;
     margin: auto;
     display: block;
 }
@@ -70,6 +70,8 @@ body {
     margin-bottom: 50px;
     background-color: var(--secondary-color);
     transition: all 0.4s ease;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .card-cont:hover {
@@ -77,6 +79,8 @@ body {
 }
 
 .card-cont-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     width: 250px;
     height: 300px;
 }
@@ -84,6 +88,8 @@ body {
 .card-cont-img img {
     width: 100%;
     height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .card-cont-text {
@@ -101,7 +107,7 @@ body {
 
 .card-cont-text p.tutor-name {
     font-size: 1rem;
-    color: black;
+    color: white;
     font-weight: 600;
 }
 
@@ -111,7 +117,7 @@ body {
 
 .card-cont-text p.role {
     font-size: 0.9rem;
-    color: black;
+    color: white;
     padding: 5px 0px;
 }
 
@@ -137,7 +143,7 @@ body {
     width: 15%;
     transform: translateX(-50%);
     left: 50%;
-    background-color: var(--primary-color);
+    background-color: #1c5252;
     bottom: 0%;
 }
 

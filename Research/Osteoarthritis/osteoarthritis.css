@@ -1,14 +1,28 @@
 section{
-    padding: 10px 30px;
+    padding: 40px 30px;
 }
 
 section h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 section p {
     text-align: justify;
+}
+
+.resource-head{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.heading {
+    margin-top: 30px;
+}
+
+.bold {
+    font-weight: bold;
+    margin: 15px 0px 4px 0px;
 }
 
 .footer-bottom {
